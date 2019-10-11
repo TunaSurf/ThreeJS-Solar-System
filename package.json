@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
     "start": "webpack-dev-server --open"
   },
   "dependencies": {

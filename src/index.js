@@ -15,6 +15,12 @@ window.onload = () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
 
+  window.addEventListener("resize", () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
   // Add each planet to a group and then the scene, along with their orbit path
   let planetGroup = new THREE.Group();
 
