@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --open"
   },
   "dependencies": {
-    "three": "^0.109.0"
+    "three": "^0.125.0"
   },
   "devDependencies": {
     "webpack": "^4.41.0",
